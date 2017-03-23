@@ -19,6 +19,9 @@ namespace EndToEndMailCourse._01
 
             #region TEST CODE
 
+            element = driver.FindElement(By.Name("firstName"));
+            value = element.GetAttribute("value");
+
             #endregion
 
             Assert.IsNotNull(element);
