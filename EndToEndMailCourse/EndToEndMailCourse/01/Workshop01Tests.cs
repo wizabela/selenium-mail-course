@@ -39,7 +39,10 @@ namespace EndToEndMailCourse._01
             string value = "";
             IWebElement element = null;
 
-            #region TEST CODE
+            #region 
+
+            element = driver.FindElement(By.Name("lastName"));
+            value = element.GetAttribute("value");
 
             #endregion
 
@@ -58,7 +61,9 @@ namespace EndToEndMailCourse._01
             string value = "";
             IWebElement element = null;
 
-            #region TEST CODE
+            #region 
+            element = driver.FindElement(By.Name("country"));
+            value = element.GetAttribute("value");
 
             #endregion
 
@@ -77,9 +82,8 @@ namespace EndToEndMailCourse._01
             bool value = true;
             IWebElement element = null;
 
-            #region TEST CODE
-
-            #endregion
+            element = driver.FindElement(By.Id("isActive"));
+            value = element.Selected;
 
             Assert.IsNotNull(element);
             Assert.IsTrue(element is IWebElement);
@@ -97,7 +101,9 @@ namespace EndToEndMailCourse._01
             string value = "";
             IWebElement element = null;
 
-            #region TEST CODE
+            #region
+            element = driver.FindElement(By.Id("commentInput"));
+            value = element.GetAttribute("value");
 
             #endregion
 
@@ -115,10 +121,9 @@ namespace EndToEndMailCourse._01
             driver.Navigate().GoToUrl(testUrl);
             IWebElement element = null;
 
-            #region TEST CODE
+            element = driver.FindElement(By.LinkText("Details"));
 
-            #endregion
-
+      
             Assert.IsNotNull(element);
             Assert.IsTrue(element is IWebElement);
             Assert.AreEqual(element.GetAttribute("href"), @"https://en.wikipedia.org/wiki/Terry_Pratchett");
@@ -134,7 +139,8 @@ namespace EndToEndMailCourse._01
 
             IWebElement element = null;
 
-            #region TEST CODE
+            #region 
+            element = driver.FindElement(By.LinkText("List of books"));
 
             #endregion
 
