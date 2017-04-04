@@ -57,18 +57,20 @@ namespace EndToEndMailCourse._04
         #region TEST CODE
         public IWebElement FirstNameInput
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("firstNameInput")); }
         }
-
         public IWebElement LastNameInput
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("lastNameInput")); }
         }
-
         public IWebElement NextButton
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("nextButton")); }
         }
+    
         #endregion
     }
 
@@ -84,18 +86,20 @@ namespace EndToEndMailCourse._04
         #region TEST CODE
         public IWebElement StreetInput
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("streetInput")); }
         }
-
         public IWebElement TownInput
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("townInput")); }
         }
-
         public IWebElement NextButton
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("nextButton")); }
         }
+    
         #endregion
     }
 
@@ -111,23 +115,25 @@ namespace EndToEndMailCourse._04
         #region TEST CODE
         public IWebElement FirstName
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("firstNameText")); }
         }
-
         public IWebElement LastName
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("lastNameText")); }
         }
-
         public IWebElement Street
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("streetText")); }
         }
-
         public IWebElement Town
         {
-            get { return null; }
+            get
+            { return _driver.FindElement(By.Id("townText")); }
         }
+
         #endregion
     }
 }
