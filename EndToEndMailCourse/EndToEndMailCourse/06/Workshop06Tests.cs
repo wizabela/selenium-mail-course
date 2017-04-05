@@ -17,7 +17,16 @@ namespace EndToEndMailCourse._06
         {
             #region TEST CODE
 
-            var driver = new ChromeDriver();
+            var options = new ChromeOptions();
+            options.EnableMobileEmulation(
+                new ChromeMobileEmulationDeviceSettings()
+                {
+                    EnableTouchEvents = true,
+                    Width = 412,
+                    Height = 732,
+                    UserAgent = "Chrome"
+                });
+            var driver = new ChromeDriver(options);
 
             #endregion
 
