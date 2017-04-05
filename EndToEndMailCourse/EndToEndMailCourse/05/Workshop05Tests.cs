@@ -23,6 +23,11 @@ namespace EndToEndMailCourse._05
 
             #region TEST
 
+            var qualitySelectElement = new SelectElement(qualityElement);
+            qualitySelectElement.SelectByValue("good");
+            var supportSelectElement = new SelectElement(supportElement);
+            supportSelectElement.SelectByValue("poor");
+           
             #endregion
 
             Assert.AreEqual(qualityElement.GetAttribute("value"), "good");
